@@ -18,7 +18,6 @@ $api->version('v1', function ($api) {
         });
         $api->group(['prefix' => 'comment', 'middleware' => ['is_login']], function ($api) {
             $api->post('create', 'CommentController@add'); //增加评论
-            $api->put('change', 'CommentController@change');//更新评论
             $api->get('read', 'CommentController@read'); //查看评论
             $api->delete('remove', 'CommentController@remove'); //删除评论
         });

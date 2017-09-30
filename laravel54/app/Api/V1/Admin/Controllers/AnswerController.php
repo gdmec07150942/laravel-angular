@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Validator;
-use App\Api\V1\Admin\Models\Answer;
+use App\Api\V1\Admin\Models\Answers;
 
 class AnswerController extends CommonController
 {
@@ -34,7 +34,7 @@ class AnswerController extends CommonController
             $question_exit = Questions::where('id', $question_id)->get()->toArray();
             if ($user_exit) {
                 if ($question_exit) {
-                    $answer = new Answer();
+                    $answer = new Answers();
                     $answer->content = $data['content'];
                     $answer->user_id = $id;
                     $answer->question_id = $question_id;
@@ -74,10 +74,10 @@ class AnswerController extends CommonController
         $validator = Validator::make($data, $rules, $messages);
         if ($validator->passes()) {
             $user_exit = Users::where('id', $user_id)->get()->toArray();
-            $answer_user_id = Answer::where('id', $data['id'])->value('user_id');
+            $answer_user_id = Answers::where('id', $data['id'])->value('user_id');
             if ($user_exit) {
                 if ($answer_user_id == $user_id) {
-                    $result = Answer::where('id', $data['id'])->update([
+                    $result = Answers::where('id', $data['id'])->update([
                         'content' => $data['content'],
                     ]);
                     if ($result) {
@@ -106,16 +106,18 @@ class AnswerController extends CommonController
         $answer = '';
         if ($data) {
             if (isset($data['id'])) {
-                $answer = Answer::find($data['id']);
+                $answer = Answers::find($data['id']);
             }
             if (isset($data['question_id'])) {
-                $answer = Answer::where('question_id', $data['question_id'])->get()->keyBy('id');
+                $answer = Answers::where('question_id', $data['question_id'])->get()->keyBy('id');
             }
             if ($answer) {
                 return $this->ajaxReturn(1, '查看回答成功', $answer);
             } else {
                 return $this->ajaxReturn(0, '服务器错误');
             }
+        } else {
+            return $this->ajaxReturn(0, '请选择查看的条件');
         }
     }
 
