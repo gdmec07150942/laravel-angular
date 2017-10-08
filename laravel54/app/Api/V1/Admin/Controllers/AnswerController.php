@@ -4,12 +4,12 @@ namespace App\Api\V1\Admin\Controllers;
 
 
 use App\Api\V1\Admin\Models\Questions;
-use App\Api\V1\Admin\Models\Users;
+use App\Api\V1\Admin\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Validator;
-use App\Api\V1\Admin\Models\Answers;
+use App\Api\V1\Admin\Models\Answer;
 
 class AnswerController extends CommonController
 {
@@ -29,12 +29,12 @@ class AnswerController extends CommonController
         ];
         $validator = Validator::make($data, $rules, $messages);
         if ($validator->passes()) {
-            $user_exit = Users::where('id', $id)->get();
+            $user_exit = User::where('id', $id)->get();
             $question_id = $data['question_id'];
             $question_exit = Questions::where('id', $question_id)->get()->toArray();
             if ($user_exit) {
                 if ($question_exit) {
-                    $answer = new Answers();
+                    $answer = new Answer();
                     $answer->content = $data['content'];
                     $answer->user_id = $id;
                     $answer->question_id = $question_id;
@@ -73,11 +73,11 @@ class AnswerController extends CommonController
         ];
         $validator = Validator::make($data, $rules, $messages);
         if ($validator->passes()) {
-            $user_exit = Users::where('id', $user_id)->get()->toArray();
-            $answer_user_id = Answers::where('id', $data['id'])->value('user_id');
+            $user_exit = User::where('id', $user_id)->get()->toArray();
+            $answer_user_id = Answer::where('id', $data['id'])->value('user_id');
             if ($user_exit) {
                 if ($answer_user_id == $user_id) {
-                    $result = Answers::where('id', $data['id'])->update([
+                    $result = Answer::where('id', $data['id'])->update([
                         'content' => $data['content'],
                     ]);
                     if ($result) {
@@ -106,10 +106,10 @@ class AnswerController extends CommonController
         $answer = '';
         if ($data) {
             if (isset($data['id'])) {
-                $answer = Answers::find($data['id']);
+                $answer = Answer::find($data['id']);
             }
             if (isset($data['question_id'])) {
-                $answer = Answers::where('question_id', $data['question_id'])->get()->keyBy('id');
+                $answer = Answer::where('question_id', $data['question_id'])->get()->keyBy('id');
             }
             if ($answer) {
                 return $this->ajaxReturn(1, '查看回答成功', $answer);
@@ -119,6 +119,44 @@ class AnswerController extends CommonController
         } else {
             return $this->ajaxReturn(0, '请选择查看的条件');
         }
+    }
+
+    public function vote()
+    {
+        $data = Input::all();
+        $user_id = Auth::guard('admin')->user()->id;
+        $data['vote'] = $data['vote'] <= 1 ? 1 : 2;
+        $rules = [
+            'id' => 'required', //这是回答的id
+            'vote' => 'required'  //投票
+        ];
+        $messages = [
+            'id.required' => '回答不能为空',
+            'vote.required' => '投票不能为空'  //投票
+        ];
+        $validator = Validator::make($data, $rules, $messages);
+        if ($validator->passes()) {
+            $answer = Answer::find($data['id']);
+            if ($answer) {
+                //以下是检查此用户是否在相同问题下投过票，如果投过则清空删除
+                $vote = $answer->users()
+                    ->newPivotStatement()
+                    ->where('user_id', $user_id)
+                    ->where('answer_id', $data['id'])
+                    ->delete();
+                if ($vote) {
+                    $answer->users()->attach($user_id, ['vote' => $data['vote']]);
+                    return $this->ajaxReturn(1, '投票成功');
+                } else {
+                    $answer->users()->attach($user_id, ['vote' => $data['vote']]);
+                    return $this->ajaxReturn(1, '投票成功');
+                }
+            } else {
+                return $this->ajaxReturn(0, '这个回答不存在');
+            }
+        }
+        $msg = $validator->messages()->first();
+        return $this->ajaxReturn(0, $msg);
     }
 
 

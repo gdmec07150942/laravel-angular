@@ -19,7 +19,7 @@ class CreateTableComments extends Migration
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('question_id')->nullable();
             $table->unsignedInteger('answer_id')->nullable();
-            $table->unsignedInteger('reply_id')->nullable();
+            $table->unsignedInteger('reply_to')->nullable();
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('question_id')->references('id')->on('questions');

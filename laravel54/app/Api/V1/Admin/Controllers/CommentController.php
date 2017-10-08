@@ -5,12 +5,12 @@ namespace App\Api\V1\Admin\Controllers;
 
 use App\Api\V1\Admin\Models\Comments;
 use App\Api\V1\Admin\Models\Questions;
-use App\Api\V1\Admin\Models\Users;
+use App\Api\V1\Admin\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Validator;
-use App\Api\V1\Admin\Models\Answers;
+use App\Api\V1\Admin\Models\Answer;
 
 class CommentController extends CommonController
 {
@@ -30,11 +30,11 @@ class CommentController extends CommonController
         ];
         $validator = Validator::make($data, $rules, $messages);
         if ($validator->passes()) {
-            $user_exit = Users::where('id', $user_id)->get()->toArray();
+            $user_exit = User::where('id', $user_id)->get()->toArray();
             $question_id = (isset($data['question_id'])) ? $data['question_id'] : '';
             $question_exit = Questions::where('id', $question_id)->get()->toArray();
             $answer_id = (isset($data['answer_id'])) ? $data['answer_id'] : '';
-            $answer_exit = Answers::where('id', $answer_id)->get()->toArray();
+            $answer_exit = Answer::where('id', $answer_id)->get()->toArray();
             $comment_id = (isset($data['reply_to'])) ? $data['reply_to'] : '';
             $comment_exit = Comments::where('id', $comment_id)->get()->toArray();
             $comment = new Comments();
@@ -82,7 +82,7 @@ class CommentController extends CommonController
             $question_id = isset($data['question_id']) ?: '';
             $question_exit = Questions::where('id', $question_id)->get()->toArray();
             $answer_id = isset($data['answer_id']) ?: '';
-            $anseer_exit = Answers::where('id', $answer_id)->get()->toArray();
+            $anseer_exit = Answer::where('id', $answer_id)->get()->toArray();
             if (!$anseer_exit && !$question_exit) {
                 return $this->ajaxReturn(0, '没有此问题或回答');
             }
@@ -92,7 +92,7 @@ class CommentController extends CommonController
             if ($question_exit) {
                 $comments = Comments::where('question_id', $question_id)->get()->keyBy('id')->toArray();
             }
-            return $this->ajaxReturn(1, '查询成功', $data);
+            return $this->ajaxReturn(1, '查询成功', $comments);
         } else {
             return $this->ajaxReturn(0, '请选择查看的条件');
         }

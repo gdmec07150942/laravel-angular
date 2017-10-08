@@ -3,7 +3,7 @@
 namespace App\Api\V1\Admin\Controllers;
 
 
-use App\Api\V1\Admin\Models\Users;
+use App\Api\V1\Admin\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Request;
@@ -28,7 +28,7 @@ class QuestionController extends CommonController
         ];
         $validator = Validator::make($data, $rules, $messages);
         if ($validator->passes()) {
-            $user_exit = Users::where('id', $id)->get()->toArray();
+            $user_exit = User::where('id', $id)->get()->toArray();
             if ($user_exit) {
                 $quest = new Questions();
                 if (isset($data['desc'])) {
@@ -71,7 +71,7 @@ class QuestionController extends CommonController
         ];
         $validator = Validator::make($data, $rules, $messages);
         if ($validator->passes()) {
-            $user_exit = Users::where('id', $user_id)->get()->toArray();
+            $user_exit = User::where('id', $user_id)->get()->toArray();
             $question_id = Questions::where('id', $data['id'])->get()->toArray();
             if ($user_exit) {
                 if ($question_id) {
