@@ -2,186 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78a0539b-1d68-4eaf-8722-19b1fffaf154" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular/angular.min.js.gzip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Models/Answer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/release/angular-ui-router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/release/angular-ui-router.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/src/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/src/resolve.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/src/state.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/src/stateDirectives.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/src/stateFilters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/src/templateFactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/src/urlMatcherFactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/src/urlRouter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/src/view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/src/viewDirective.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular-ui-router/src/viewScroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular/angular-csp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular/angular.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/angular/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/insert-css/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/insert-css/example/bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/insert-css/example/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/insert-css/example/insert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/insert-css/example/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/insert-css/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/insert-css/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/insert-css/readme.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/insert-css/test/insert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/AUTHORS.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/dist/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/dist/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/dist/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/dist/jquery.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/dist/jquery.slim.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/dist/jquery.slim.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/dist/jquery.slim.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/external/sizzle/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/external/sizzle/dist/sizzle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/external/sizzle/dist/sizzle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/external/sizzle/dist/sizzle.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/.eslintrc.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/ajax/jsonp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/ajax/load.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/ajax/parseXML.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/ajax/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/ajax/var/location.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/ajax/var/nonce.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/ajax/var/rquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/ajax/xhr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/attributes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/attributes/attr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/attributes/classes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/attributes/prop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/attributes/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/attributes/val.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/callbacks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/core/DOMEval.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/core/access.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/core/init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/core/nodeName.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/core/parseHTML.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/core/ready-no-deferred.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/core/ready.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/core/readyException.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/core/stripAndCollapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/core/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/core/var/rsingleTag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/css/addGetHookIf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/css/adjustCSS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/css/curCSS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/css/hiddenVisibleSelectors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/css/showHide.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/css/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/css/var/cssExpand.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/css/var/getStyles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/css/var/isHiddenWithinTree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/css/var/rmargin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/css/var/rnumnonpx.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/css/var/swap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/data/Data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/data/var/acceptData.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/data/var/dataPriv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/data/var/dataUser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/deferred.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/deferred/exceptionHook.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/deprecated.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/dimensions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/effects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/effects/Tween.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/effects/animatedSelector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/event.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/event/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/event/alias.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/event/focusin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/event/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/event/trigger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/exports/amd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/exports/global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/manipulation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/manipulation/_evalUrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/manipulation/buildFragment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/manipulation/getAll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/manipulation/setGlobalEval.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/manipulation/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/manipulation/var/rcheckableType.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/manipulation/var/rscriptType.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/manipulation/var/rtagName.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/manipulation/wrapMap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/offset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/queue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/queue/delay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/selector-native.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/selector-sizzle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/selector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/serialize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/traversing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/traversing/findFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/traversing/var/dir.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/traversing/var/rneedsContext.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/traversing/var/siblings.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/ObjectFunctionString.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/arr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/class2type.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/concat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/document.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/documentElement.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/fnToString.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/getProto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/hasOwn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/indexOf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/pnum.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/push.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/rcssNum.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/rnothtmlwhite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/slice.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/var/toString.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/jquery/src/wrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/normalize-css/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/normalize-css/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/normalize-css/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/normalize-css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/normalize-css/normalize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/public/node_modules/normalize-css/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laravel54/resources/views/index.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Models/Answers.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Models/Users.php" afterPath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Models/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/AnswerController.php" afterPath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/AnswerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/CommentController.php" afterPath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/CommentController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/QuestionController.php" afterPath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/QuestionController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/UserController.php" afterPath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Models/Comments.php" afterPath="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Models/Comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/composer.lock" afterPath="$PROJECT_DIR$/laravel54/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/config/auth.php" afterPath="$PROJECT_DIR$/laravel54/config/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/database/migrations/2017_09_30_020734_create_table_comments.php" afterPath="$PROJECT_DIR$/laravel54/database/migrations/2017_09_30_020734_create_table_comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/package.json" afterPath="$PROJECT_DIR$/laravel54/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/public/css/base.css" afterPath="$PROJECT_DIR$/laravel54/public/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/public/js/base.js" afterPath="$PROJECT_DIR$/laravel54/public/js/base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/resources/views/index.blade.php" afterPath="$PROJECT_DIR$/laravel54/resources/views/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/routes/admin.php" afterPath="$PROJECT_DIR$/laravel54/routes/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel54/routes/web.php" afterPath="$PROJECT_DIR$/laravel54/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -191,42 +17,91 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laravel54/routes/web.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravel54/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommentController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/CommentController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2160">
+              <caret line="79" column="29" lean-forward="false" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+              <folding>
+                <marker date="1507512225140" expanded="true" signature="3558:3569" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnswerController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/AnswerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3030">
+              <caret line="107" column="37" lean-forward="false" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+              <folding>
+                <element signature="e#49#87#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/QuestionController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3570">
+              <caret line="124" column="5" lean-forward="false" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+              <folding>
+                <marker date="1507512225140" expanded="true" signature="53:81" ph="..." />
+                <marker date="1507512225140" expanded="true" signature="2120:3043" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravel54/routes/admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="22" column="59" lean-forward="false" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+              <folding>
+                <marker date="1507524545838" expanded="true" signature="60:1812" ph="..." />
+                <marker date="1507524545838" expanded="true" signature="83:1811" ph="..." />
+                <marker date="1507524545838" expanded="true" signature="100:1807" ph="..." />
+                <marker date="1507524545838" expanded="true" signature="192:1806" ph="..." />
+                <marker date="1507524545838" expanded="true" signature="1452:1492" ph="..." />
+                <marker date="1507524545838" expanded="true" signature="1452:1493" ph="..." />
+                <marker date="1507524545838" expanded="true" signature="1481:1492" ph="..." />
+                <marker date="1507524545838" expanded="true" signature="1516:1799" ph="..." />
+                <marker date="1507524545838" expanded="true" signature="1588:1798" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravel54/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="540">
+              <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+              <folding>
+                <marker date="1507544398081" expanded="true" signature="4206:4226" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laravel54/public/css/base.css">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laravel54/public/js/base.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+            <state relative-caret-position="270">
+              <caret line="73" column="27" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -269,12 +144,12 @@
         <option value="$PROJECT_DIR$/laravel54/config/auth.php" />
         <option value="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/AnswerController.php" />
         <option value="$PROJECT_DIR$/laravel54/routes/admin.php" />
-        <option value="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/laravel54/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php" />
         <option value="$PROJECT_DIR$/laravel54/routes/web.php" />
         <option value="$PROJECT_DIR$/laravel54/public/css/base.css" />
         <option value="$PROJECT_DIR$/laravel54/public/js/base.js" />
         <option value="$PROJECT_DIR$/laravel54/resources/views/index.blade.php" />
+        <option value="$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/UserController.php" />
       </list>
     </option>
   </component>
@@ -288,17 +163,17 @@
     <handled-path value="$PROJECT_DIR$/laravel54/public/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1932" />
-    <option name="height" value="1048" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="63" />
+    <option name="y" value="24" />
+    <option name="width" value="1857" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -311,77 +186,11 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="laravel-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-angular" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-angular" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="laravel54" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-angular" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="laravel54" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-angular" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="laravel54" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-angular" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="laravel54" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-angular" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="laravel54" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="normalize-css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-angular" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="laravel54" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-angular" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="laravel54" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-angular" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="laravel54" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../APILast" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xiaohu" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -423,15 +232,15 @@
       <workItem from="1506985328878" duration="2613000" />
       <workItem from="1507229675311" duration="3400000" />
       <workItem from="1507430131151" duration="3774000" />
+      <workItem from="1507520534256" duration="1259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20921000" />
+    <option name="totallyTimeSpent" value="23419000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
-    <editor active="true" />
+    <frame x="63" y="-4" width="1857" height="1084" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24918744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -440,7 +249,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30659342" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -654,8 +463,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel54/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -710,8 +520,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/CommentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="41" column="73" lean-forward="false" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="73" />
+        <state relative-caret-position="2160">
+          <caret line="79" column="29" lean-forward="false" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+          <folding>
+            <marker date="1507512225140" expanded="true" signature="3558:3569" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -738,22 +551,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/QuestionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="77" column="47" lean-forward="false" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
+        <state relative-caret-position="3570">
+          <caret line="124" column="5" lean-forward="false" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+          <folding>
+            <marker date="1507512225140" expanded="true" signature="53:81" ph="..." />
+            <marker date="1507512225140" expanded="true" signature="2120:3043" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/AnswerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3828">
-          <caret line="141" column="40" lean-forward="false" selection-start-line="141" selection-start-column="40" selection-end-line="141" selection-end-column="40" />
+        <state relative-caret-position="3030">
+          <caret line="107" column="37" lean-forward="false" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+          <folding>
+            <element signature="e#49#87#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel54/routes/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="660">
+          <caret line="22" column="59" lean-forward="false" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+          <folding>
+            <marker date="1507524545838" expanded="true" signature="60:1812" ph="..." />
+            <marker date="1507524545838" expanded="true" signature="83:1811" ph="..." />
+            <marker date="1507524545838" expanded="true" signature="100:1807" ph="..." />
+            <marker date="1507524545838" expanded="true" signature="192:1806" ph="..." />
+            <marker date="1507524545838" expanded="true" signature="1452:1492" ph="..." />
+            <marker date="1507524545838" expanded="true" signature="1452:1493" ph="..." />
+            <marker date="1507524545838" expanded="true" signature="1481:1492" ph="..." />
+            <marker date="1507524545838" expanded="true" signature="1516:1799" ph="..." />
+            <marker date="1507524545838" expanded="true" signature="1588:1798" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -761,13 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
           <caret line="498" column="11" lean-forward="false" selection-start-line="492" selection-start-column="10" selection-end-line="498" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="71" column="27" lean-forward="false" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -789,7 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,14 +634,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/laravel54/resources/views/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="540">
+          <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+          <folding>
+            <marker date="1507544398081" expanded="true" signature="4206:4226" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravel54/app/Api/V1/Admin/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="73" column="27" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
           <folding />
         </state>
       </provider>
