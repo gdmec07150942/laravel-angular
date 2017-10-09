@@ -44,6 +44,8 @@
                         .then(function (r) {
                             if (r.data.ret === 1) {
                                 $state.go('home');
+                            } else {
+                                me.login_failed = true;
                             }
                         }, function (e) {
 

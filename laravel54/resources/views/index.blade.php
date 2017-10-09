@@ -16,7 +16,14 @@
         <div class="fl">
             <div class="navbar-item logo">晓乎</div>
             <div class="navbar-item">
-                <input type="text">
+                <form id="quick_ask">
+                    <div class="navbar-item">
+                        <input type="text">
+                    </div>
+                    <div class="navbar-item">
+                        <button>提问</button>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="fr">
@@ -89,6 +96,9 @@
                 <div class="input-group">
                     <label>密码</label>
                     <input type="password" ng-model="User.login_data.password" name="password" required>
+                </div>
+                <div ng-if="User.login_failed" class="input-error-set">
+                    用户名或密码错误
                 </div>
                 <div class="input-group">
                     <button class="primary" ng-disabled="login_form.$invalid" type="submit">登录</button>
