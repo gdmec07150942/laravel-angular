@@ -5,6 +5,7 @@ namespace App\Api\V1\Admin\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 
 class LoginController extends CommonController
@@ -29,6 +30,7 @@ class LoginController extends CommonController
         if ($validator->passes()) {
             $user = request(['username', 'password']);
             if (Auth::guard('admin')->attempt($user)) {
+                Session(['username' => Auth::guard('admin')->user()->username]);
                 return $this->ajaxReturn(1, '登录成功', [
                     'id' => Auth::guard('admin')->user()->id,
                     'username' => Auth::guard('admin')->user()->username

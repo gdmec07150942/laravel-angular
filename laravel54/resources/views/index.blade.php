@@ -16,9 +16,9 @@
         <div class="fl">
             <div class="navbar-item logo">晓乎</div>
             <div class="navbar-item">
-                <form id="quick_ask">
+                <form id="quick_ask" ng-controller="QuestionAddController" ng-submit="Question.go_add_question()">
                     <div class="navbar-item">
-                        <input type="text">
+                        <input type="text" ng-model="Question.new_question.title">
                     </div>
                     <div class="navbar-item">
                         <button>提问</button>
@@ -28,8 +28,14 @@
         </div>
         <div class="fr">
             <a class="navbar-item" ui-sref="home">首页</a>
-            <a class="navbar-item" ui-sref="login">登录</a>
-            <a class="navbar-item" ui-sref="signup">注册</a>
+            @if(\Illuminate\Support\Facades\Auth::check())
+                <a class="navbar-item"
+                   ui-sref="login">{{\Illuminate\Support\Facades\Auth::guard()->user()->username}}</a>
+                <a href="{{url('api/logout')}}">登出</a>
+            @else
+                <a class="navbar-item" ui-sref="login">登录</a>
+                <a class="navbar-item" ui-sref="signup">注册</a>
+            @endif
         </div>
     </div>
 </div>
@@ -40,10 +46,56 @@
 </div>
 </body>
 <script type="text/ng-template" id="home.tpl">
-    <div class="home container">
-        首页
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam beatae consequatur dicta dolore earum
-        impedit, laborum libero nam odio perspiciatis qui recusandae suscipit ullam unde! Non omnis vero voluptatibus.
+    <div class="home card container">
+        <h1>最新动态</h1>
+        <div class="hr"></div>
+        <div class="item-set">
+            <div class="item">
+                <div class="vote"></div>
+                <div class="feed-item-content">
+                    <div class="content-act">xx赞同了该回答</div>
+                    <div class="title">哪个瞬间让你突然觉得读书有用？</div>
+                    <div class="content-owner">王华华 <span class="desc">aaaaaa</span></div>
+                    <div class="content-main">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cupiditate dicta enim error
+                        eum explicabo facere facilis ipsa itaque iusto, minus nihil non, numquam, omnis quia quis
+                        tempora totam voluptatem.
+                    </div>
+                    <div class="action-set">
+                        <div class="comment">评论</div>
+                    </div>
+                    <div class="comment-block">
+                        <div class="hr"></div>
+                        <div class="comment-item-set">
+                            <div class="comment-item clearfix">
+                                <div class="user">黎明</div>
+                                <div class="comment-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut
+                                    exercitationem laborum nisi quas quibusdam ratione rerum tenetur velit vero!
+                                    Culpa dignissimos dolorum ducimus eaque facilis perferendis sequi sit voluptate?
+                                </div>
+                            </div>
+                            <div class="comment-item clearfix">
+                                <div class="user">黎明</div>
+                                <div class="comment-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut
+                                    exercitationem laborum nisi quas quibusdam ratione rerum tenetur velit vero!
+                                    Culpa dignissimos dolorum ducimus eaque facilis perferendis sequi sit voluptate?
+                                </div>
+                            </div>
+                            <div class="comment-item clearfix">
+                                <div class="user">黎明</div>
+                                <div class="comment-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut
+                                    exercitationem laborum nisi quas quibusdam ratione rerum tenetur velit vero!
+                                    Culpa dignissimos dolorum ducimus eaque facilis perferendis sequi sit voluptate?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </script>
 <script type="text/ng-template" id="signup.tpl">
@@ -102,6 +154,26 @@
                 </div>
                 <div class="input-group">
                     <button class="primary" ng-disabled="login_form.$invalid" type="submit">登录</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</script>
+<script type="text/ng-template" id="question.add.tpl">
+    <div class="question-add container" ng-controller="QuestionAddController">
+        <div class="card">
+            <form ng-submit="Question.add()" name="question_add_form">
+                <div class="input-group">
+                    <label>问题标题</label>
+                    <input type="text" ng-model="Question.new_question.title" name="title" ng-minlength="5"
+                           ng-maxlength="255" required>
+                </div>
+                <div class="input-group">
+                    <label>问题描述</label>
+                    <textarea type="text" ng-model="Question.new_question.desc" name="desc"></textarea>
+                </div>
+                <div class="input-group">
+                    <button type="submit" ng-disabled="question_add_form.$invalid" class="primary">提交</button>
                 </div>
             </form>
         </div>
