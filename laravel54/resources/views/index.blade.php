@@ -46,16 +46,18 @@
 </div>
 </body>
 <script type="text/ng-template" id="home.tpl">
-    <div class="home card container">
+    <div ng-controller="HomeController" class="home card container">
         <h1>最新动态</h1>
         <div class="hr"></div>
         <div class="item-set">
-            <div class="item">
+            <div class="item" ng-repeat="item in Timeline.data">
                 <div class="vote"></div>
                 <div class="feed-item-content">
-                    <div class="content-act">xx赞同了该回答</div>
-                    <div class="title">哪个瞬间让你突然觉得读书有用？</div>
-                    <div class="content-owner">王华华 <span class="desc">aaaaaa</span></div>
+                    <div ng-if="item.question_id" class="content-act">用户[:item.user_id:]添加了回答</div>
+                    <div ng-if="!item.question_id" class="content-act">用户[:item.user_id:]添加了提问</div>
+                    <div class="title">[:item.title:]</div>
+                    <div class="content-owner">用户[:item.user_id:]
+                        <span class="desc">[:item.desc:]</span></div>
                     <div class="content-main">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cupiditate dicta enim error
                         eum explicabo facere facilis ipsa itaque iusto, minus nihil non, numquam, omnis quia quis
@@ -67,6 +69,7 @@
                     <div class="comment-block">
                         <div class="hr"></div>
                         <div class="comment-item-set">
+                            <div class="rect"></div>
                             <div class="comment-item clearfix">
                                 <div class="user">黎明</div>
                                 <div class="comment-content">
@@ -94,9 +97,12 @@
                         </div>
                     </div>
                 </div>
+                <div class="hr"></div>
             </div>
+
         </div>
     </div>
+
 </script>
 <script type="text/ng-template" id="signup.tpl">
     <div class="signup container" ng-controller="SignupController">

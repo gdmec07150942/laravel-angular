@@ -6,6 +6,7 @@ $api->version('v1', function ($api) {
         $api->post('/register', 'UserController@signUp'); //注册
         $api->post('/exit', 'UserController@exits'); //检测是否用户名已经被注册过了
         $api->get('/logout', 'LoginController@Logout');//登出
+        $api->get('/index', 'CommonController@index');//首页API
         $api->group(['prefix' => 'admin', 'middleware' => ['is_login']], function ($api) {
             $api->put('change', 'UserController@change_password'); //修改密码
 //            $api->put('change', 'UserController@change');//找回密码

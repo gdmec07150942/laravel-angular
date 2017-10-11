@@ -128,5 +128,31 @@
                 $scope.Question = QuestionService;
             }
         ])
+        .service('TimeService', [
+            '$http', function ($http) {
+                var me = this;
+                me.data = [];
+                me.get = function () {
+                    $http.get('api/index')
+                        .then(function (r) {
+                            if (r.data.ret === 1) {
+                                me.data = me.data.concat(r.data.data);
+                            } else {
+                                console.log('服务器错误');
+                            }
+                        }, function () {
+                            console.log('服务器错误');
+                        })
+                }
+            }
+        ])
+        .controller('HomeController', [
+            '$scope',
+            'TimeService',
+            function ($scope, TimeService) {
+                $scope.Timeline = TimeService;
+                TimeService.get();
+            }
+        ])
 
 })();

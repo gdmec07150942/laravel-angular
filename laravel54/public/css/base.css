@@ -81,14 +81,18 @@ h1 {
     margin-right: auto;
 }
 
-.container.signup,
-.container.login,
-.container.home,
-.container.question-add,
-.container.reset-password {
-    width: 400px;
+.container .signup,
+.container .login,
+.container .home,
+.container .question-add,
+.container .reset-password {
+    width: 500px;
     margin-top: 15px;
 
+}
+
+.container .home {
+    width: 700px;
 }
 
 [ui-sref] {
@@ -133,8 +137,22 @@ label {
 
 }
 
+.comment-block {
+    display: none;
+}
+
 .comment-item-set {
     padding: 0 10px;
+}
+
+.comment-item-set .rect {
+    position: relative;
+    bottom: 20px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #999;
 }
 
 .comment-item {

@@ -10,4 +10,9 @@ class Questions extends Model
     protected $table = 'questions';
     use SoftDeletes;
     protected $dates = ['deleted_at'];
+
+    public function user()
+    {
+        return $this->belongsTo('App\Api\V1\Admin\Models\User');
+    }
 }
