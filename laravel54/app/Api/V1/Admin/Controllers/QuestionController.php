@@ -104,6 +104,12 @@ class QuestionController extends CommonController
      */
     public function read()
     {
+        $data = Input::all();
+        if (isset($data['user_id'])) {
+            $questions = Questions::where('user_id', $data['user_id'])->get()->keyBy('id');
+            return $this->ajaxReturn(1, '获取问题成功', $questions);
+        }
+
         $limit = Request::get('limit') ?: 15; //默认分页为15条
 
         $skip = Request::get('page') ? (Request::get('page') - 1) * $limit : 0;

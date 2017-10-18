@@ -3,7 +3,6 @@
 namespace App\Api\V1\Admin\Controllers;
 
 use App\Api\V1\Admin\Models\User;
-use App\Api\V1\Admin\Models\Users;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Input;
@@ -96,5 +95,21 @@ class UserController extends CommonController
         } else {
             return $this->ajaxReturn(1, '可以注册此用户名');
         }
+    }
+
+    /**
+     * 获取用户信息
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function read()
+    {
+        $id = Auth::id();
+        $data = User::find($id);
+        if ($data) {
+            return $this->ajaxReturn(1, '成功获取用户信息', $data);
+        } else {
+            return $this->ajaxReturn(0, '服务器错误', $data);
+        }
+
     }
 }

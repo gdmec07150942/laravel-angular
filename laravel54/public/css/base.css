@@ -13,9 +13,20 @@ a {
     text-decoration: none;
 }
 
+.tac {
+    text-align: center;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
 h1 {
     font-size: 18px;
-    margin-top: 0;
+}
+
+h2 {
+    font-size: 16px;
 }
 
 .fl {
@@ -31,7 +42,7 @@ h1 {
     width: 96%;
     height: 1px;
     background: #eee;
-    margin: 10px auto;
+    margin: 10px 1%;
 }
 
 .claerfix:after,
@@ -76,7 +87,7 @@ h1 {
 }
 
 .container {
-    width: 600px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -84,15 +95,16 @@ h1 {
 .container .signup,
 .container .login,
 .container .home,
+.container .user,
 .container .question-add,
 .container .reset-password {
-    width: 500px;
+    max-width: 500px;
     margin-top: 15px;
 
 }
 
 .container .home {
-    width: 700px;
+    max-width: 700px;
 }
 
 [ui-sref] {
@@ -106,6 +118,57 @@ label {
 
 .home h1 {
     font-size: 16px;
+}
+
+.feed.item .vote {
+    float: left;
+    width: 10%;
+}
+
+.feed.item .feed-item-content {
+    width: 90%;
+    float: left;
+}
+
+.feed.item .hr {
+    float: left;
+}
+
+.feed.item .vote {
+    padding-right: 8px;
+}
+
+.feed.item .vote > * {
+    background: rgba(200, 0, 0, 0.1);
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    margin-bottom: 2px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.feed.item .vote .up {
+    color: #6f0b00;
+    padding: 4px;
+
+}
+
+.feed.item .vote .up:hover {
+    background: #aa1100;
+    color: #fff;
+}
+
+.feed.item .vote .down {
+    background: rgba(0, 0, 0, 0.1);
+    color: #555555;
+
+}
+
+.feed.item .vote .down:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+
 }
 
 .feed-item-content .content-act {
@@ -126,7 +189,7 @@ label {
     font-size: 13px;
 }
 
-.home h1,
+h1, h2,
 .feed-item-content .content-act,
 .feed-item-content .content-owner .desc,
 .feed-item-content .action-set {
@@ -160,14 +223,14 @@ label {
 }
 
 .comment-item .user {
-    /*float: left;*/
+    float: left;
     width: 10%;
     font-weight: 800;
 }
 
 .comment-item .comment-content {
     width: 90%;
-    /*float: right;*/
+    float: right;
 }
 
 label {
@@ -230,3 +293,11 @@ button, input {
     padding: 6px;
 }
 
+.info_item > *:first-child {
+    float: left;
+    width: 20%;
+}
+.info_item > *:last-child {
+    float: left;
+    width: 80%;
+}

@@ -1,11 +1,23 @@
 ;(function () {
     'use strict';
-    angular.module('user', [])
+    angular.module('user', [
+        'answer'
+    ])
         .service('UserService', ['$http', '$state',
             function ($http, $state) {
                 var me = this;
                 me.signup_data = {};
                 me.login_data = {};
+                me.read = function (param) {
+                    return $http.post('api/user/read', param)
+                        .then(function (r) {
+                            if (r.ret === 1)
+                                me.data[param.id] = r.data.data;
+                            me.user_data = r.data.data;
+                        }, function () {
+
+                        })
+                };
                 me.signup = function () {
                     $http.post('api/register', me.signup_data)
                         .then(function (r) {
@@ -65,6 +77,30 @@
             function ($scope, UserService) {
                 $scope.User = UserService;
 
+            }
+        ])
+        .controller('UserController', [
+            '$scope',
+            '$stateParams',
+            'UserService',
+            'AnswerService',
+            'QuestionService',
+            function ($scope, $stateParams, UserService, AnswerService, QuestionService) {
+                $scope.User = UserService;
+                console.log('$stateParams', $stateParams);
+                UserService.read($stateParams);
+                AnswerService.read({user_id: $stateParams.id})
+                    .then(function (r) {
+                        if (r) {
+                            UserService.his_answers = r;
+                        }
+                    });
+                QuestionService.read({user_id: $stateParams.id})
+                    .then(function (r) {
+                        if (r) {
+                            UserService.his_questions = r;
+                        }
+                    });
             }
         ])
 })();  

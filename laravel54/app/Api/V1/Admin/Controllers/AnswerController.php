@@ -97,7 +97,7 @@ class AnswerController extends CommonController
     }
 
     /**
-     * 查看问题
+     * 查看回答
      * @return \Illuminate\Http\JsonResponse
      */
     public function read()
@@ -106,10 +106,13 @@ class AnswerController extends CommonController
         $answer = '';
         if ($data) {
             if (isset($data['id'])) {
-                $answer = Answer::find($data['id']);
+                $answer = Answer::with('user')->with('users')->find($data['id']);
             }
             if (isset($data['question_id'])) {
                 $answer = Answer::where('question_id', $data['question_id'])->get()->keyBy('id');
+            }
+            if (isset($data['user_id'])){
+                $answer = Answer::where('user_id', $data['user_id'])->get()->keyBy('id');
             }
             if ($answer) {
                 return $this->ajaxReturn(1, '查看回答成功', $answer);
@@ -121,11 +124,18 @@ class AnswerController extends CommonController
         }
     }
 
+    /**
+     * 投票功能
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function vote()
     {
         $data = Input::all();
         $user_id = Auth::guard('admin')->user()->id;
-        $data['vote'] = $data['vote'] <= 1 ? 1 : 2;
+
+        if ($data['vote'] != 1 && $data['vote'] != 2 && $data['vote'] != 3) {
+          return $this->ajaxReturn(0,'没有');
+        }
         $rules = [
             'id' => 'required', //这是回答的id
             'vote' => 'required'  //投票
