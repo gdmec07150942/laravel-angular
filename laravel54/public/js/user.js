@@ -8,12 +8,13 @@
                 var me = this;
                 me.signup_data = {};
                 me.login_data = {};
+                me.data = {};
                 me.read = function (param) {
                     return $http.post('api/user/read', param)
                         .then(function (r) {
                             if (r.ret === 1)
                                 me.data[param.id] = r.data.data;
-                            me.user_data = r.data.data;
+                            me.current_user = r.data.data;
                         }, function () {
 
                         })

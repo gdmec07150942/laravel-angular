@@ -111,8 +111,8 @@ class AnswerController extends CommonController
             if (isset($data['question_id'])) {
                 $answer = Answer::where('question_id', $data['question_id'])->get()->keyBy('id');
             }
-            if (isset($data['user_id'])){
-                $answer = Answer::where('user_id', $data['user_id'])->get()->keyBy('id');
+            if (isset($data['user_id'])) {
+                $answer = Answer::where('user_id', $data['user_id'])->with('question')->get()->keyBy('id');
             }
             if ($answer) {
                 return $this->ajaxReturn(1, '查看回答成功', $answer);
@@ -134,7 +134,7 @@ class AnswerController extends CommonController
         $user_id = Auth::guard('admin')->user()->id;
 
         if ($data['vote'] != 1 && $data['vote'] != 2 && $data['vote'] != 3) {
-          return $this->ajaxReturn(0,'没有');
+            return $this->ajaxReturn(0, '没有');
         }
         $rules = [
             'id' => 'required', //这是回答的id

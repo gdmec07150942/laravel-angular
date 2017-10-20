@@ -110,6 +110,10 @@ class QuestionController extends CommonController
             return $this->ajaxReturn(1, '获取问题成功', $questions);
         }
 
+        if (isset($data['id'])) {
+            $questions = Questions::with('answers')->find($data['id']);
+            return $this->ajaxReturn(1, '获取问题成功', $questions);
+        }
         $limit = Request::get('limit') ?: 15; //默认分页为15条
 
         $skip = Request::get('page') ? (Request::get('page') - 1) * $limit : 0;

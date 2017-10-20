@@ -27,6 +27,7 @@ h1 {
 
 h2 {
     font-size: 16px;
+    margin-bottom: 6px;
 }
 
 .fl {
@@ -293,11 +294,24 @@ button, input {
     padding: 6px;
 }
 
+.info_item > * {
+    margin-bottom: 5px;
+}
+
 .info_item > *:first-child {
     float: left;
     width: 20%;
 }
+
 .info_item > *:last-child {
     float: left;
     width: 80%;
+}
+
+.user.container .title {
+    font-weight: 700;
+}
+
+.comment {
+    color: #666666;
 }

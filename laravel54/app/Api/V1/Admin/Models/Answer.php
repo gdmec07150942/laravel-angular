@@ -18,5 +18,10 @@ class Answer extends Model
         return $this->belongsTo('App\Api\V1\Admin\Models\User');
     }
 
+    public function question()
+    {
+        return $this->belongsTo('App\Api\V1\Admin\Models\Questions');
+    }
+
 
 }

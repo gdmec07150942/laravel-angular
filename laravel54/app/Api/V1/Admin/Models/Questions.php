@@ -15,4 +15,9 @@ class Questions extends Model
     {
         return $this->belongsTo('App\Api\V1\Admin\Models\User');
     }
+
+    public function answers()
+    {
+        return $this->hasMany('App\Api\V1\Admin\Models\Answer');
+    }
 }
