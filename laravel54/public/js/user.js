@@ -9,6 +9,7 @@
                 me.signup_data = {};
                 me.login_data = {};
                 me.data = {};
+                me.islogin = true;
                 me.read = function (param) {
                     return $http.post('api/user/read', param)
                         .then(function (r) {
@@ -35,6 +36,7 @@
                     $http.post('api/login', me.login_data)
                         .then(function (r) {
                             if (r.data.ret === 1) {
+                                me.islogin = false; //这是用来判断是否登录的
                                 $state.go('home');
                                 location.href = '/xiaohu/laravel54/public/#!/home';
                             } else {
@@ -45,12 +47,24 @@
                         })
                 };
                 me.username_exits = function () {
-                    $http.post('api/exit', {username: me.signup_data.username})
+                    $http.post('api/username_exit', {username: me.signup_data.username})
                         .then(function (r) {
-                            if (r.data.ret === 0) {
+                            if (r.data.ret === 1) {
                                 me.signup_username_exists = true;
                             } else {
                                 me.signup_username_exists = false;
+                            }
+                        }, function (e) {
+                            console.log('e', e);
+                        })
+                };
+                me.email_exits = function () {
+                    $http.post('api/email_exit', {email: me.signup_data.email})
+                        .then(function (r) {
+                            if (r.data.ret === 1) {
+                                me.signup_email_exists = true;
+                            } else {
+                                me.signup_email_exists = false;
                             }
                         }, function (e) {
                             console.log('e', e);
@@ -68,6 +82,9 @@
                 }, function (n, o) {
                     if (n.username != o.username) {
                         UserService.username_exits();
+                    }
+                    if (n.email != o.email) {
+                        UserService.email_exits();
                     }
                 }, true);
             }

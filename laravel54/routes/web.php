@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('welcome', function () {
+    return view('welcome');
+});
 
 Route::get('/', function () {
     return view('index');
@@ -31,4 +34,17 @@ Route::get('tpl/page/question_detail', function () {
 });
 Route::get('tpl/page/user', function () {
     return view('page.user');
+});
+//---------------------上面是前台，后面是后台--------------------
+Route::get('admin/index/index', function () {
+    return view('admin.index.index');
+});
+Route::get('admin/page/add', function () {
+    return view('admin.page.add');
+});
+Route::get('admin/page/edit', function () {
+    return view('admin.page.edit');
+});
+Route::get('admin/page/list', function () {
+    return view('admin.page.list');
 });

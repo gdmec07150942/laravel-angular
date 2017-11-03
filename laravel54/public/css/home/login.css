@@ -1,0 +1,13 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: auto;
+    background: url("../../images/login.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgba(255, 255, 255, .95)
+}

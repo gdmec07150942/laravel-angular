@@ -18,15 +18,18 @@ class UserController extends CommonController
     public function signUp()
     {
         $username = Request::get('username');
+        $email = Request::get('email');
         $password = Request::get('password');
-        if (!($username && $password)) {
-            return $this->ajaxReturn(0, '用户名和密码皆不为空');
+        $password_confirmation = Request::get('password_confirmation');
+        if (!($username && $password && $email && $password_confirmation)) {
+            return $this->ajaxReturn(0, '用户名和邮箱和密码皆不为空');
         }
-        $user_exits = User::where('username', $username)->exists();
+        $user_exits = User::where(['username' => $username, 'email' => $email])->exists();
         if ($user_exits) {
-            return $this->ajaxReturn(0, '用户名已存在');
+            return $this->ajaxReturn(0, '用户名或邮箱已存在');
         }
         $users = new User();
+        $users->email = $email;
         $users->username = $username;
         $users->password = bcrypt($password);
         if ($users->save()) {
@@ -86,14 +89,30 @@ class UserController extends CommonController
      * 检测用户名是否存在
      * @return \Illuminate\Http\JsonResponse
      */
-    public function exits()
+    public function username_exits()
     {
-        $username = Input::get('username');
-        $username_exit = User::where('username', $username)->get()->toArray();
+
+        $username = Request::get('username');
+        $username_exit = User::where('username', $username)->exists();
         if ($username_exit) {
-            return $this->ajaxReturn(0, '这个用户名已被注册过了');
+            return $this->ajaxReturn(1, '这个用户名已被注册过了');
         } else {
-            return $this->ajaxReturn(1, '可以注册此用户名');
+            return $this->ajaxReturn(0, '可以注册');
+        }
+    }
+
+    /**
+     * 检测邮箱是否存在
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function email_exits()
+    {
+        $email = Request::get('email');
+        $email_exit = User::where('email', $email)->exists();
+        if ($email_exit) {
+            return $this->ajaxReturn(1, '这个邮箱已被注册过了');
+        } else {
+            return $this->ajaxReturn(0, '可以注册');
         }
     }
 

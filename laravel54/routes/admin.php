@@ -4,7 +4,8 @@ $api->version('v1', function ($api) {
     $api->group(['namespace' => '\App\Api\V1\Admin\Controllers', 'middleware' => ['web']], function ($api) {
         $api->post('/login', 'LoginController@Login'); //登录
         $api->post('/register', 'UserController@signUp'); //注册
-        $api->post('/exit', 'UserController@exits'); //检测是否用户名已经被注册过了
+        $api->post('/username_exit', 'UserController@username_exits'); //检测是否用户名已经被注册过了
+        $api->post('/email_exit', 'UserController@email_exits'); //检测是否邮箱地址已经被注册过了
         $api->get('/logout', 'LoginController@Logout');//登出
         $api->post('/index', 'CommonController@index');//首页API
         $api->group(['prefix' => 'user', 'middleware' => ['is_login']], function ($api) {

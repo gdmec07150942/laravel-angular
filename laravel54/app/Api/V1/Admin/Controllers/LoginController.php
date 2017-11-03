@@ -19,24 +19,24 @@ class LoginController extends CommonController
     {
         $data = Input::all();
         $rules = [
-            'username' => 'required',
+            'email' => 'required',
             'password' => 'required'
         ];
         $messages = [
-            'username.required' => '用户名不能为空',
+            'email.required' => '用户名不能为空',
             'password.required' => '密码不能为空'
         ];
         $validator = Validator::make($data, $rules, $messages);
         if ($validator->passes()) {
-            $user = request(['username', 'password']);
+            $user = request(['email', 'password']);
             if (Auth::guard('admin')->attempt($user)) {
-                Session(['username' => Auth::guard('admin')->user()->username]);
+                Session(['email' => Auth::guard('admin')->user()->email]);
                 return $this->ajaxReturn(1, '登录成功', [
                     'id' => Auth::guard('admin')->user()->id,
-                    'username' => Auth::guard('admin')->user()->username
+                    'email' => Auth::guard('admin')->user()->email
                 ]);
             } else {
-                return $this->ajaxReturn(0, '用户名或密码错');
+                return $this->ajaxReturn(0, '邮箱或密码错');
             }
         } else {
             $msg = $validator->messages()->first();
